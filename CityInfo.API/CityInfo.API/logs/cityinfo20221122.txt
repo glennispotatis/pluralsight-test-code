@@ -1,0 +1,109 @@
+2022-11-22 17:31:54.061 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2022-11-22 17:31:54.125 +01:00 [DBG] Hosting starting
+2022-11-22 17:31:54.315 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 01A36B286F1C4AB6FF79ACC8F480D5B301DE85FD)
+2022-11-22 17:31:54.429 +01:00 [INF] Now listening on: https://localhost:7010
+2022-11-22 17:31:54.430 +01:00 [INF] Now listening on: http://localhost:5070
+2022-11-22 17:31:54.430 +01:00 [DBG] Loaded hosting startup assembly CityInfo.API
+2022-11-22 17:31:54.430 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-22 17:31:54.430 +01:00 [INF] Hosting environment: Development
+2022-11-22 17:31:54.430 +01:00 [INF] Content root path: /Users/glenn.hansen/Documents/prosjekter/ASP.NET/CityInfo.API/CityInfo.API/
+2022-11-22 17:31:54.430 +01:00 [DBG] Hosting started
+2022-11-22 17:32:01.245 +01:00 [DBG] Connection id "0HMMCKSAI2DEP" received FIN.
+2022-11-22 17:32:01.256 +01:00 [DBG] Connection id "0HMMCKSAI2DEP" accepted.
+2022-11-22 17:32:01.256 +01:00 [DBG] Connection id "0HMMCKSAI2DEP" started.
+2022-11-22 17:32:01.257 +01:00 [DBG] Connection id "0HMMCKSAI2DEQ" accepted.
+2022-11-22 17:32:01.257 +01:00 [DBG] Connection id "0HMMCKSAI2DEQ" started.
+2022-11-22 17:32:01.267 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-11-22 17:32:01.290 +01:00 [DBG] Connection id "0HMMCKSAI2DEP" stopped.
+2022-11-22 17:32:01.292 +01:00 [DBG] Connection id "0HMMCKSAI2DEP" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-22 17:32:01.302 +01:00 [DBG] Connection 0HMMCKSAI2DEQ established using the following protocol: "Tls12"
+2022-11-22 17:32:01.329 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7010/api/cities - -
+2022-11-22 17:32:01.330 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2022-11-22 17:32:01.352 +01:00 [DBG] The request path  does not match the path filter
+2022-11-22 17:32:01.368 +01:00 [DBG] 1 candidate(s) found for the request path '/api/cities'
+2022-11-22 17:32:01.370 +01:00 [DBG] Endpoint 'CityInfo.API.Controllers.CitiesController.GetCities (CityInfo.API)' with route pattern 'api/cities' is valid for the request path '/api/cities'
+2022-11-22 17:32:01.370 +01:00 [DBG] Request matched endpoint 'CityInfo.API.Controllers.CitiesController.GetCities (CityInfo.API)'
+2022-11-22 17:32:01.371 +01:00 [INF] Executing endpoint 'CityInfo.API.Controllers.CitiesController.GetCities (CityInfo.API)'
+2022-11-22 17:32:01.376 +01:00 [INF] Route matched with {action = "GetCities", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CityInfo.API.Models.CityDto]] GetCities() on controller CityInfo.API.Controllers.CitiesController (CityInfo.API).
+2022-11-22 17:32:01.376 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-11-22 17:32:01.376 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-11-22 17:32:01.376 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-11-22 17:32:01.376 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-11-22 17:32:01.376 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-11-22 17:32:01.377 +01:00 [DBG] Executing controller factory for controller CityInfo.API.Controllers.CitiesController (CityInfo.API)
+2022-11-22 17:32:01.377 +01:00 [DBG] Executed controller factory for controller CityInfo.API.Controllers.CitiesController (CityInfo.API)
+2022-11-22 17:32:01.378 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2022-11-22 17:32:01.379 +01:00 [DBG] No information found on request to perform content negotiation.
+2022-11-22 17:32:01.379 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2022-11-22 17:32:01.379 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2022-11-22 17:32:01.379 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2022-11-22 17:32:01.380 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CityInfo.API.Models.CityDto, CityInfo.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-22 17:32:01.471 +01:00 [INF] Executed action CityInfo.API.Controllers.CitiesController.GetCities (CityInfo.API) in 91.9267ms
+2022-11-22 17:32:01.471 +01:00 [INF] Executed endpoint 'CityInfo.API.Controllers.CitiesController.GetCities (CityInfo.API)'
+2022-11-22 17:32:01.471 +01:00 [DBG] Connection id "0HMMCKSAI2DEQ" completed keep alive response.
+2022-11-22 17:32:01.472 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7010/api/cities - - - 200 1060 application/json;+charset=utf-8 144.7966ms
+2022-11-22 17:32:10.024 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7010/api/cities - -
+2022-11-22 17:32:10.025 +01:00 [DBG] The request path  does not match the path filter
+2022-11-22 17:32:10.027 +01:00 [DBG] 1 candidate(s) found for the request path '/api/cities'
+2022-11-22 17:32:10.028 +01:00 [DBG] Endpoint 'CityInfo.API.Controllers.CitiesController.GetCities (CityInfo.API)' with route pattern 'api/cities' is valid for the request path '/api/cities'
+2022-11-22 17:32:10.028 +01:00 [DBG] Request matched endpoint 'CityInfo.API.Controllers.CitiesController.GetCities (CityInfo.API)'
+2022-11-22 17:32:10.029 +01:00 [INF] Executing endpoint 'CityInfo.API.Controllers.CitiesController.GetCities (CityInfo.API)'
+2022-11-22 17:32:10.030 +01:00 [INF] Route matched with {action = "GetCities", controller = "Cities"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CityInfo.API.Models.CityDto]] GetCities() on controller CityInfo.API.Controllers.CitiesController (CityInfo.API).
+2022-11-22 17:32:10.030 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-11-22 17:32:10.030 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-11-22 17:32:10.030 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-11-22 17:32:10.030 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-11-22 17:32:10.030 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-11-22 17:32:10.030 +01:00 [DBG] Executing controller factory for controller CityInfo.API.Controllers.CitiesController (CityInfo.API)
+2022-11-22 17:32:10.030 +01:00 [DBG] Executed controller factory for controller CityInfo.API.Controllers.CitiesController (CityInfo.API)
+2022-11-22 17:32:10.031 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2022-11-22 17:32:10.034 +01:00 [DBG] Attempting to select an output formatter based on Accept header '["application/xml"]'.
+2022-11-22 17:32:10.038 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter' and content type 'application/xml' to write the response.
+2022-11-22 17:32:10.038 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CityInfo.API.Models.CityDto, CityInfo.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-11-22 17:32:10.045 +01:00 [INF] Executed action CityInfo.API.Controllers.CitiesController.GetCities (CityInfo.API) in 15.2876ms
+2022-11-22 17:32:10.045 +01:00 [INF] Executed endpoint 'CityInfo.API.Controllers.CitiesController.GetCities (CityInfo.API)'
+2022-11-22 17:32:10.045 +01:00 [DBG] Connection id "0HMMCKSAI2DEQ" completed keep alive response.
+2022-11-22 17:32:10.046 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7010/api/cities - - - 200 1602 application/xml;+charset=utf-8 21.1640ms
+2022-11-22 17:32:45.953 +01:00 [DBG] Connection id "0HMMCKSAI2DER" accepted.
+2022-11-22 17:32:45.981 +01:00 [DBG] Connection id "0HMMCKSAI2DER" started.
+2022-11-22 17:32:46.050 +01:00 [DBG] Connection 0HMMCKSAI2DER established using the following protocol: "Tls12"
+2022-11-22 17:32:46.107 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7010/swagger/index.html - -
+2022-11-22 17:32:46.171 +01:00 [DBG] Connection id "0HMMCKSAI2DER" completed keep alive response.
+2022-11-22 17:32:46.172 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7010/swagger/index.html - - - 200 - text/html;charset=utf-8 64.3972ms
+2022-11-22 17:32:46.191 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7010/swagger/swagger-ui.css - -
+2022-11-22 17:32:46.196 +01:00 [DBG] Connection id "0HMMCKSAI2DES" accepted.
+2022-11-22 17:32:46.196 +01:00 [DBG] Connection id "0HMMCKSAI2DES" started.
+2022-11-22 17:32:46.197 +01:00 [DBG] Connection id "0HMMCKSAI2DET" accepted.
+2022-11-22 17:32:46.197 +01:00 [DBG] Connection id "0HMMCKSAI2DET" started.
+2022-11-22 17:32:46.198 +01:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2022-11-22 17:32:46.198 +01:00 [DBG] Connection id "0HMMCKSAI2DER" completed keep alive response.
+2022-11-22 17:32:46.198 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7010/swagger/swagger-ui.css - - - 200 143943 text/css 7.4804ms
+2022-11-22 17:32:46.207 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7010/swagger/swagger-ui-bundle.js - -
+2022-11-22 17:32:46.262 +01:00 [DBG] Connection 0HMMCKSAI2DES established using the following protocol: "Tls12"
+2022-11-22 17:32:46.263 +01:00 [DBG] Connection 0HMMCKSAI2DET established using the following protocol: "Tls12"
+2022-11-22 17:32:46.263 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7010/swagger/swagger-ui-standalone-preset.js - -
+2022-11-22 17:32:46.446 +01:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2022-11-22 17:32:46.505 +01:00 [DBG] Connection id "0HMMCKSAI2DES" completed keep alive response.
+2022-11-22 17:32:46.509 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7010/swagger/swagger-ui-standalone-preset.js - - - 200 339486 application/javascript 245.7267ms
+2022-11-22 17:32:46.569 +01:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2022-11-22 17:32:46.569 +01:00 [DBG] Connection id "0HMMCKSAI2DER" completed keep alive response.
+2022-11-22 17:32:46.569 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7010/swagger/swagger-ui-bundle.js - - - 200 1096145 application/javascript 361.8825ms
+2022-11-22 17:32:46.648 +01:00 [INF] Request starting HTTP/1.1 GET https://localhost:7010/swagger/v1/swagger.json - -
+2022-11-22 17:32:46.748 +01:00 [DBG] Connection id "0HMMCKSAI2DER" completed keep alive response.
+2022-11-22 17:32:46.748 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7010/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 100.4698ms
+2022-11-22 17:36:40.908 +01:00 [DBG] Connection id "0HMMCKSAI2DET" received FIN.
+2022-11-22 17:36:41.025 +01:00 [DBG] Connection id "0HMMCKSAI2DET" disconnecting.
+2022-11-22 17:36:41.054 +01:00 [DBG] Connection id "0HMMCKSAI2DET" sending FIN because: "The client closed the connection."
+2022-11-22 17:36:41.063 +01:00 [DBG] Connection id "0HMMCKSAI2DET" stopped.
+2022-11-22 17:41:21.177 +01:00 [DBG] Connection id "0HMMCKSAI2DES" received FIN.
+2022-11-22 17:41:21.207 +01:00 [DBG] Connection id "0HMMCKSAI2DER" received FIN.
+2022-11-22 17:41:21.235 +01:00 [DBG] Connection id "0HMMCKSAI2DES" sending FIN because: "The client closed the connection."
+2022-11-22 17:41:21.235 +01:00 [DBG] Connection id "0HMMCKSAI2DES" disconnecting.
+2022-11-22 17:41:21.235 +01:00 [DBG] Connection id "0HMMCKSAI2DER" sending FIN because: "The client closed the connection."
+2022-11-22 17:41:21.236 +01:00 [DBG] Connection id "0HMMCKSAI2DER" disconnecting.
+2022-11-22 17:41:21.237 +01:00 [DBG] Connection id "0HMMCKSAI2DES" stopped.
+2022-11-22 17:41:21.237 +01:00 [DBG] Connection id "0HMMCKSAI2DER" stopped.
