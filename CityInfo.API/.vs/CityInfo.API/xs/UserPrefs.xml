@@ -1,11 +1,16 @@
 ﻿<Properties StartupConfiguration="{6C0AFB49-9B7E-4627-AB85-F5C13AAAAA20}|Default">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.CityInfo.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="CityInfo.API/Controllers/AuthenticationController.cs">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="CityInfo.API/Models/CityWithoutPointsOfInterestDto.cs">
     <Files>
-      <File FileName="CityInfo.API/Program.cs" />
-      <File FileName="CityInfo.API/Controllers/AuthenticationController.cs" Line="48" Column="27" />
+      <File FileName="CityInfo.API/Program.cs" Line="24" Column="34" />
+      <File FileName="CityInfo.API/Controllers/CitiesController.cs" Line="43" Column="32" />
+      <File FileName="CityInfo.API/Models/CityWithoutPointsOfInterestDto.cs" Line="18" Column="40" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,6 +18,10 @@
           <Node name="CityInfo.API" expanded="True">
             <Node name="CityInfo.API" expanded="True">
               <Node name="Controllers" expanded="True" />
+              <Node name="logs" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="CityWithoutPointsOfInterestDto.cs" selected="True" />
+              </Node>
               <Node name="Profiles" expanded="True" />
               <Node name="Services" expanded="True" />
               <Node name="appsettings.json" expanded="True" />
@@ -22,8 +31,4 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
 </Properties>
