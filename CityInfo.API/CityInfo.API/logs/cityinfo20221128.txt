@@ -683,3 +683,129 @@ LIMIT @__p_0 OFFSET @__p_0
 2022-11-28 13:17:07.746 +01:00 [DBG] Connection id "0HMMH79IUTARI" completed keep alive response.
 2022-11-28 13:17:07.746 +01:00 [DBG] 'CityInfoContext' disposed.
 2022-11-28 13:17:07.746 +01:00 [INF] Request finished HTTP/1.1 GET https://localhost:7010/api/cities?pageSize=1&pageNumber=2 - - - 200 76 application/json;+charset=utf-8 88.3462ms
+2022-11-28 14:54:30.408 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2022-11-28 14:54:30.462 +01:00 [DBG] Hosting starting
+2022-11-28 14:54:30.559 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 01A36B286F1C4AB6FF79ACC8F480D5B301DE85FD)
+2022-11-28 14:54:30.695 +01:00 [INF] Now listening on: https://localhost:7010
+2022-11-28 14:54:30.695 +01:00 [INF] Now listening on: http://localhost:5070
+2022-11-28 14:54:30.695 +01:00 [DBG] Loaded hosting startup assembly CityInfo.API
+2022-11-28 14:54:30.696 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-28 14:54:30.696 +01:00 [INF] Hosting environment: Development
+2022-11-28 14:54:30.696 +01:00 [INF] Content root path: /Users/glenn.hansen/Documents/prosjekter/ASP.NET/CityInfo.API/CityInfo.API/
+2022-11-28 14:54:30.696 +01:00 [DBG] Hosting started
+2022-11-28 14:54:46.989 +01:00 [DBG] Connection id "0HMMH90E5L2IJ" received FIN.
+2022-11-28 14:54:47.002 +01:00 [DBG] Connection id "0HMMH90E5L2IJ" accepted.
+2022-11-28 14:54:47.006 +01:00 [DBG] Connection id "0HMMH90E5L2IJ" started.
+2022-11-28 14:54:47.008 +01:00 [DBG] Connection id "0HMMH90E5L2IK" accepted.
+2022-11-28 14:54:47.039 +01:00 [DBG] Connection id "0HMMH90E5L2IK" started.
+2022-11-28 14:54:47.046 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-11-28 14:54:47.060 +01:00 [DBG] Connection id "0HMMH90E5L2IJ" stopped.
+2022-11-28 14:54:47.062 +01:00 [DBG] Connection id "0HMMH90E5L2IJ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-28 14:54:47.082 +01:00 [DBG] Connection 0HMMH90E5L2IK established using the following protocol: "Tls12"
+2022-11-28 14:54:47.107 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:7010/api/authentication/authenticate application/json 114
+2022-11-28 14:54:47.107 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2022-11-28 14:54:47.118 +01:00 [DBG] POST requests are not supported
+2022-11-28 14:54:47.128 +01:00 [DBG] No candidates found for the request path '/api/authentication/authenticate'
+2022-11-28 14:54:47.128 +01:00 [DBG] Request did not match any endpoints
+2022-11-28 14:54:47.130 +01:00 [DBG] Connection id "0HMMH90E5L2IK" completed keep alive response.
+2022-11-28 14:54:47.131 +01:00 [INF] Request finished HTTP/1.1 POST https://localhost:7010/api/authentication/authenticate application/json 114 - 404 0 - 26.0446ms
+2022-11-28 14:54:47.131 +01:00 [DBG] Connection id "0HMMH90E5L2IK", Request id "0HMMH90E5L2IK:00000002": started reading request body.
+2022-11-28 14:54:47.131 +01:00 [DBG] Connection id "0HMMH90E5L2IK", Request id "0HMMH90E5L2IK:00000002": done reading request body.
+2022-11-28 14:55:05.799 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2022-11-28 14:55:05.849 +01:00 [DBG] Hosting starting
+2022-11-28 14:55:05.921 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 01A36B286F1C4AB6FF79ACC8F480D5B301DE85FD)
+2022-11-28 14:55:06.033 +01:00 [INF] Now listening on: https://localhost:7010
+2022-11-28 14:55:06.033 +01:00 [INF] Now listening on: http://localhost:5070
+2022-11-28 14:55:06.034 +01:00 [DBG] Loaded hosting startup assembly CityInfo.API
+2022-11-28 14:55:06.034 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-28 14:55:06.034 +01:00 [INF] Hosting environment: Development
+2022-11-28 14:55:06.034 +01:00 [INF] Content root path: /Users/glenn.hansen/Documents/prosjekter/ASP.NET/CityInfo.API/CityInfo.API/
+2022-11-28 14:55:06.034 +01:00 [DBG] Hosting started
+2022-11-28 14:55:07.788 +01:00 [DBG] Connection id "0HMMH90KC0EA1" received FIN.
+2022-11-28 14:55:07.797 +01:00 [DBG] Connection id "0HMMH90KC0EA1" accepted.
+2022-11-28 14:55:07.798 +01:00 [DBG] Connection id "0HMMH90KC0EA1" started.
+2022-11-28 14:55:07.800 +01:00 [DBG] Connection id "0HMMH90KC0EA2" accepted.
+2022-11-28 14:55:07.800 +01:00 [DBG] Connection id "0HMMH90KC0EA2" started.
+2022-11-28 14:55:07.805 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-11-28 14:55:07.818 +01:00 [DBG] Connection id "0HMMH90KC0EA1" stopped.
+2022-11-28 14:55:07.820 +01:00 [DBG] Connection id "0HMMH90KC0EA1" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-28 14:55:07.843 +01:00 [DBG] Connection 0HMMH90KC0EA2 established using the following protocol: "Tls12"
+2022-11-28 14:55:07.866 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:7010/api/authentication/authenticate application/json 114
+2022-11-28 14:55:07.867 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2022-11-28 14:55:07.878 +01:00 [DBG] POST requests are not supported
+2022-11-28 14:55:07.888 +01:00 [DBG] No candidates found for the request path '/api/authentication/authenticate'
+2022-11-28 14:55:07.888 +01:00 [DBG] Request did not match any endpoints
+2022-11-28 14:55:07.890 +01:00 [DBG] Connection id "0HMMH90KC0EA2" completed keep alive response.
+2022-11-28 14:55:07.891 +01:00 [INF] Request finished HTTP/1.1 POST https://localhost:7010/api/authentication/authenticate application/json 114 - 404 0 - 27.1812ms
+2022-11-28 14:55:07.891 +01:00 [DBG] Connection id "0HMMH90KC0EA2", Request id "0HMMH90KC0EA2:00000002": started reading request body.
+2022-11-28 14:55:07.891 +01:00 [DBG] Connection id "0HMMH90KC0EA2", Request id "0HMMH90KC0EA2:00000002": done reading request body.
+2022-11-28 14:55:45.051 +01:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2022-11-28 14:55:45.101 +01:00 [DBG] Hosting starting
+2022-11-28 14:55:45.185 +01:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 01A36B286F1C4AB6FF79ACC8F480D5B301DE85FD)
+2022-11-28 14:55:45.319 +01:00 [INF] Now listening on: https://localhost:7010
+2022-11-28 14:55:45.319 +01:00 [INF] Now listening on: http://localhost:5070
+2022-11-28 14:55:45.319 +01:00 [DBG] Loaded hosting startup assembly CityInfo.API
+2022-11-28 14:55:45.319 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-28 14:55:45.319 +01:00 [INF] Hosting environment: Development
+2022-11-28 14:55:45.319 +01:00 [INF] Content root path: /Users/glenn.hansen/Documents/prosjekter/ASP.NET/CityInfo.API/CityInfo.API/
+2022-11-28 14:55:45.319 +01:00 [DBG] Hosting started
+2022-11-28 14:55:47.368 +01:00 [DBG] Connection id "0HMMH9105F4CP" received FIN.
+2022-11-28 14:55:47.381 +01:00 [DBG] Connection id "0HMMH9105F4CP" accepted.
+2022-11-28 14:55:47.382 +01:00 [DBG] Connection id "0HMMH9105F4CP" started.
+2022-11-28 14:55:47.382 +01:00 [DBG] Connection id "0HMMH9105F4CQ" accepted.
+2022-11-28 14:55:47.383 +01:00 [DBG] Connection id "0HMMH9105F4CQ" started.
+2022-11-28 14:55:47.390 +01:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-11-28 14:55:47.404 +01:00 [DBG] Connection id "0HMMH9105F4CP" stopped.
+2022-11-28 14:55:47.406 +01:00 [DBG] Connection id "0HMMH9105F4CP" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-11-28 14:55:47.436 +01:00 [DBG] Connection 0HMMH9105F4CQ established using the following protocol: "Tls12"
+2022-11-28 14:55:47.458 +01:00 [INF] Request starting HTTP/1.1 POST https://localhost:7010/api/authentication/authenticate application/json 114
+2022-11-28 14:55:47.459 +01:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2022-11-28 14:55:47.470 +01:00 [DBG] POST requests are not supported
+2022-11-28 14:55:47.483 +01:00 [DBG] 1 candidate(s) found for the request path '/api/authentication/authenticate'
+2022-11-28 14:55:47.485 +01:00 [DBG] Endpoint 'CityInfo.API.Controllers.AuthenticationController.Authenticate (CityInfo.API)' with route pattern 'api/authentication/authenticate' is valid for the request path '/api/authentication/authenticate'
+2022-11-28 14:55:47.485 +01:00 [DBG] Request matched endpoint 'CityInfo.API.Controllers.AuthenticationController.Authenticate (CityInfo.API)'
+2022-11-28 14:55:47.486 +01:00 [INF] Executing endpoint 'CityInfo.API.Controllers.AuthenticationController.Authenticate (CityInfo.API)'
+2022-11-28 14:55:47.496 +01:00 [INF] Route matched with {action = "Authenticate", controller = "Authentication"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.String] Authenticate(AuthenticationRequestBody) on controller CityInfo.API.Controllers.AuthenticationController (CityInfo.API).
+2022-11-28 14:55:47.496 +01:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-11-28 14:55:47.496 +01:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-11-28 14:55:47.497 +01:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-11-28 14:55:47.497 +01:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-11-28 14:55:47.497 +01:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-11-28 14:55:47.497 +01:00 [DBG] Executing controller factory for controller CityInfo.API.Controllers.AuthenticationController (CityInfo.API)
+2022-11-28 14:55:47.497 +01:00 [DBG] Executed controller factory for controller CityInfo.API.Controllers.AuthenticationController (CityInfo.API)
+2022-11-28 14:55:47.499 +01:00 [DBG] Attempting to bind parameter 'authenticationRequestBody' of type 'CityInfo.API.Controllers.AuthenticationController+AuthenticationRequestBody' ...
+2022-11-28 14:55:47.499 +01:00 [DBG] Attempting to bind parameter 'authenticationRequestBody' of type 'CityInfo.API.Controllers.AuthenticationController+AuthenticationRequestBody' using the name '' in request data ...
+2022-11-28 14:55:47.499 +01:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2022-11-28 14:55:47.499 +01:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2022-11-28 14:55:47.503 +01:00 [DBG] Connection id "0HMMH9105F4CQ", Request id "0HMMH9105F4CQ:00000002": started reading request body.
+2022-11-28 14:55:47.503 +01:00 [DBG] Connection id "0HMMH9105F4CQ", Request id "0HMMH9105F4CQ:00000002": done reading request body.
+2022-11-28 14:55:47.574 +01:00 [DBG] Done attempting to bind parameter 'authenticationRequestBody' of type 'CityInfo.API.Controllers.AuthenticationController+AuthenticationRequestBody'.
+2022-11-28 14:55:47.574 +01:00 [DBG] Done attempting to bind parameter 'authenticationRequestBody' of type 'CityInfo.API.Controllers.AuthenticationController+AuthenticationRequestBody'.
+2022-11-28 14:55:47.574 +01:00 [DBG] Attempting to validate the bound parameter 'authenticationRequestBody' of type 'CityInfo.API.Controllers.AuthenticationController+AuthenticationRequestBody' ...
+2022-11-28 14:55:47.577 +01:00 [DBG] Done attempting to validate the bound parameter 'authenticationRequestBody' of type 'CityInfo.API.Controllers.AuthenticationController+AuthenticationRequestBody'.
+2022-11-28 14:55:47.648 +01:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.XmlDataContractSerializerOutputFormatter"]
+2022-11-28 14:55:47.649 +01:00 [DBG] No information found on request to perform content negotiation.
+2022-11-28 14:55:47.649 +01:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2022-11-28 14:55:47.649 +01:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2022-11-28 14:55:47.649 +01:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2022-11-28 14:55:47.649 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2022-11-28 14:55:47.652 +01:00 [INF] Executed action CityInfo.API.Controllers.AuthenticationController.Authenticate (CityInfo.API) in 153.5347ms
+2022-11-28 14:55:47.653 +01:00 [INF] Executed endpoint 'CityInfo.API.Controllers.AuthenticationController.Authenticate (CityInfo.API)'
+2022-11-28 14:55:47.653 +01:00 [DBG] Connection id "0HMMH9105F4CQ" completed keep alive response.
+2022-11-28 14:55:47.654 +01:00 [INF] Request finished HTTP/1.1 POST https://localhost:7010/api/authentication/authenticate application/json 114 - 200 - text/plain;+charset=utf-8 197.5465ms
+2022-11-28 18:58:53.965 +01:00 [DBG] Connection id "0HMMH9105F4CQ" received FIN.
+2022-11-28 18:58:54.088 +01:00 [DBG] Connection id "0HMMH9105F4CQ" sending FIN because: "The client closed the connection."
+2022-11-28 18:58:54.089 +01:00 [DBG] Connection id "0HMMH9105F4CQ" disconnecting.
+2022-11-28 18:58:54.092 +01:00 [DBG] Connection id "0HMMH9105F4CQ" stopped.
